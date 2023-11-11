@@ -39,7 +39,7 @@ export default function RootLayout({
       <body
         className={twMerge(
           inter.className,
-          'dark:bg-dark text-slate-700 dark:text-slate-200'
+          'bg-light dark:bg-dark text-slate-700 dark:text-slate-200'
         )}
       >
         <Provider>{children}</Provider>

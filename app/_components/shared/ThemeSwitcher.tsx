@@ -15,9 +15,9 @@ export default function ThemeSwitcher() {
   return (
     <button type='button' onClick={onChange}>
       {theme === 'light' || isSSR ? (
-        <MoonStar color='darkblue' />
+        <MoonStar className='text-dark' />
       ) : (
-        <Sun color='yellow' />
+        <Sun className='text-light' />
       )}
     </button>
   )
