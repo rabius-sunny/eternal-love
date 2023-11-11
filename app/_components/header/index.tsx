@@ -36,7 +36,7 @@ export default function Navbar() {
   const [blur, setBlur] = useState(false)
 
   return (
-    <header className='bg-pink-500 text-white'>
+    <header className='bg-rose-500 text-white'>
       <Box>
         <div
           className='flex items-center justify-between py-6'
@@ -66,16 +66,19 @@ export default function Navbar() {
               animate={isOpen ? 'open' : 'closed'}
             >
               <motion.div
-                className=' absolute top-0 left-0 bottom-0 w-[300px] bg-pink-500'
+                className=' absolute top-0 left-0 bottom-0 w-[300px] bg-rose-500'
                 variants={sidebar}
               />
               <SideNavbar />
               <NavToggler
                 toggle={() => {
                   toggleOpen()
-                  setTimeout(() => {
-                    setBlur(!blur)
-                  }, 600)
+                  setTimeout(
+                    () => {
+                      setBlur(!blur)
+                    },
+                    isOpen ? 600 : 300
+                  )
                 }}
               />
             </motion.nav>

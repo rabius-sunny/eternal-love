@@ -3,6 +3,8 @@ import { Nunito } from 'next/font/google'
 
 import './globals.css'
 
+import { twMerge } from 'tailwind-merge'
+
 import Provider from '@/config/Provider'
 import { siteInfo } from '@/config/site'
 
@@ -34,7 +36,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={inter.className}>
+      <body
+        className={twMerge(
+          inter.className,
+          'dark:bg-dark text-slate-700 dark:text-slate-200'
+        )}
+      >
         <Provider>{children}</Provider>
       </body>
     </html>
