@@ -1,7 +1,30 @@
 import React from 'react'
+import { twMerge } from 'tailwind-merge'
 
-export default function Box({ children }: IChildren) {
-  return (
-    <div className=' max-w-7xl px-4 md:px-8 xl:px-0 mx-auto'>{children}</div>
+interface IProps {
+  className?: string
+  size?: 'sm' | 'md' | 'lg' | 'xl'
+  children: React.ReactNode
+}
+const getSizeClass = (breakpoint: string) => {
+  switch (breakpoint) {
+    case 'sm':
+      return 'max-w-3xl'
+    case 'md':
+      return 'max-w-5xl'
+    case 'lg':
+      return 'max-w-7xl'
+    case 'xl':
+      return 'max-w-9xl'
+    default:
+      return 'max-w-7xl'
+  }
+}
+export default function Box({ className, children, size = 'lg' }: IProps) {
+  const classNames = twMerge(
+    'px-4 md:px-8 mx-auto',
+    getSizeClass(size),
+    className
   )
+  return <div className={classNames}>{children}</div>
 }
