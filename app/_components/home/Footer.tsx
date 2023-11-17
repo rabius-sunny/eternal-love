@@ -9,7 +9,7 @@ export default function Footer() {
       size='xl'
       className='pt-10 lg:pb-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center'
     >
-      <h1 className='col-span-1 text-2xl sm:text-3xl font-bold text-rose-500'>
+      <h1 className='col-span-1 text-2xl sm:text-3xl font-bold text-danger'>
         Eternal Love
       </h1>
       <div className='col-span-1 text-center text-dark dark:text-light font-semibold'>

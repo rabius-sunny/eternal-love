@@ -11,7 +11,7 @@ export default function HomeLayout({ children }: IChildren) {
         <header className='flex items-center justify-between py-6'>
           <Link
             href='/'
-            className='flex items-center gap-3 uppercase text-xs font-semibold text-rose-600 dark:text-rose-500'
+            className='flex items-center gap-3 uppercase text-xs font-semibold text-rose-600 dark:text-danger'
           >
             <MoveLeft /> <span>back Home</span>
           </Link>
@@ -19,7 +19,7 @@ export default function HomeLayout({ children }: IChildren) {
             <ThemeSwitcher />
             <Link
               href='/dashboard'
-              className='text-sm font-semibold text-rose-600 dark:text-rose-500'
+              className='text-sm font-semibold text-rose-600 dark:text-danger'
             >
               Submit <span aria-hidden='true'>&rarr;</span>
             </Link>

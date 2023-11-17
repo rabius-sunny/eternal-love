@@ -19,7 +19,7 @@ export default function Button({
 }: IButtonProps) {
   const classNames = twMerge(
     'px-4 py-2 rounded shadow font-semibold',
-    bg ? `bg-${bg}` : 'bg-rose-500',
+    bg ? `bg-${bg}` : 'bg-danger',
     color ? `text-${color}` : 'text-white',
     className
   )

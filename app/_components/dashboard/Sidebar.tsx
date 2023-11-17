@@ -7,7 +7,7 @@ import { siteInfo, TDashboardItem } from '@/config/site'
 
 export default function Sidebar() {
   return (
-    <div className='h-screen absolute w-full bg-rose-500 text-white'>
+    <div className='h-screen absolute w-full bg-danger text-white'>
       <div className='my-8'>
         <h1 className='font-bold text-3xl text-center'>Eternal Love</h1>
       </div>

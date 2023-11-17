@@ -36,7 +36,7 @@ export default function Header() {
   const [blur, setBlur] = useState(false)
 
   return (
-    <header className='bg-rose-500 text-white'>
+    <header className='bg-danger text-white'>
       <Box>
         <div
           className='flex items-center justify-between py-6'
@@ -66,7 +66,7 @@ export default function Header() {
               animate={isOpen ? 'open' : 'closed'}
             >
               <motion.div
-                className=' absolute top-0 left-0 bottom-0 w-[300px] bg-rose-500'
+                className=' absolute top-0 left-0 bottom-0 w-[300px] bg-danger'
                 variants={sidebar}
               />
               <SideNavbar />

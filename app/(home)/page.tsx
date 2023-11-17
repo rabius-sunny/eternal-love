@@ -11,13 +11,13 @@ export default function Home() {
       {/* Hero Section */}
       <div className='min-h-[70vh] flex items-center justify-center'>
         <div className='flex flex-col items-center gap-6'>
-          <h1 className='text-rose-500 text-3xl md:text-7xl xl:text-9xl font-bold text-center my-5'>
+          <h1 className='text-danger text-3xl md:text-7xl xl:text-9xl font-bold text-center my-5'>
             Eternal Love.Com
           </h1>
           <span className='text-center border-[1px] border-slate-300 bg-white/30 font-semibold rounded-full px-4 py-2'>
             Find your spouse, just whome, where and when you want.
           </span>
-          <div className='mt-10 bg-rose-500 h-60 w-full rounded-xl' />
+          <div className='mt-10 bg-danger h-60 w-full rounded-xl' />
         </div>
       </div>
 
@@ -26,7 +26,7 @@ export default function Home() {
         <SectionHeader title='Featured Biodata' />
         <Box className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-8'>
           {[1, 2, 3, 4].map((idx) => (
-            <div key={idx} className='col-span-1 h-52 rounded bg-rose-600' />
+            <div key={idx} className='col-span-1 h-52 rounded bg-danger' />
           ))}
         </Box>
       </div>
@@ -54,7 +54,7 @@ export default function Home() {
         </Box>
 
         <Box size='md' className='mt-20 grid grid-cols-5 gap-8'>
-          <div className='col-span-5 md:col-span-2 h-52 rounded-lg bg-rose-500'></div>
+          <div className='col-span-5 md:col-span-2 h-52 rounded-lg bg-danger'></div>
           <div className='col-span-5 md:col-span-3'>
             <h1 className='text-xl font-semibold mb-5'>
               Lorem ipsum dolor sit
@@ -83,7 +83,7 @@ export default function Home() {
               molestias?
             </div>
           </div>
-          <div className='col-span-5 order-first md:order-last md:col-span-2 h-52 rounded-lg bg-rose-500'></div>
+          <div className='col-span-5 order-first md:order-last md:col-span-2 h-52 rounded-lg bg-danger'></div>
         </Box>
       </div>
 
