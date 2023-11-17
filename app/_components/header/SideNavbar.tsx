@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { Slack } from 'lucide-react'
 
-import { siteInfo } from '@/config/site'
+import { siteInfo, TNavItem } from '@/config/site'
 
 const linkVariants = {
   open: {
@@ -57,7 +57,7 @@ export default function SideNavbar() {
       variants={navVariants}
       className=' p-6 absolute top-20 w-full m-0'
     >
-      {siteInfo.navItems.map((item, idx) => (
+      {siteInfo.navItems.map((item: TNavItem, idx: number) => (
         <MenuItem item={item} key={idx} />
       ))}
     </motion.ul>

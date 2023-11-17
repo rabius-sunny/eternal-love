@@ -22,7 +22,7 @@ const getSizeClass = (breakpoint: string) => {
 }
 export default function Box({ className, children, size = 'lg' }: IProps) {
   const classNames = twMerge(
-    'px-4 md:px-8 mx-auto',
+    'px-4 md:px-8 mx-auto w-full',
     getSizeClass(size),
     className
   )

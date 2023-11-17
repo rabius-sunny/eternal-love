@@ -4,7 +4,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { motion, useCycle } from 'framer-motion'
 
-import { siteInfo } from '@/config/site'
+import { siteInfo, TNavItem } from '@/config/site'
 
 import Box from '../shared/Box'
 import ThemeSwitcher from '../shared/ThemeSwitcher'
@@ -31,7 +31,7 @@ const sidebar = {
   },
 }
 
-export default function Navbar() {
+export default function Header() {
   const [isOpen, toggleOpen] = useCycle(false, true)
   const [blur, setBlur] = useState(false)
 
@@ -48,7 +48,7 @@ export default function Navbar() {
               Eternal Love
             </Link>
             <div className='hidden md:flex md:gap-x-8'>
-              {siteInfo.navItems.map((item: { name: string; href: string }) => (
+              {siteInfo.navItems.map((item: TNavItem) => (
                 <Link
                   key={item.name}
                   href={item.href}
