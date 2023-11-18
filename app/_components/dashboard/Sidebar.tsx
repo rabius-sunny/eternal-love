@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { Accordion, AccordionItem } from '@nextui-org/accordion'
-import { Edit, Home, LineChartIcon, Settings2, Ticket } from 'lucide-react'
+import { Edit, LineChartIcon, Settings2, Ticket } from 'lucide-react'
 
 import ThemeSwitcher from '../shared/ThemeSwitcher'
 
@@ -42,6 +42,7 @@ export default function Sidebar() {
               {item.children?.map((child, i) => (
                 <Link
                   href={child.href}
+                  key={i}
                   className='p-3 w-full flex items-center gap-2 hover:bg-default-100/30'
                 >
                   <child.icon /> <span>{child.name}</span>
@@ -52,6 +53,7 @@ export default function Sidebar() {
         ) : (
           <Link
             href={item.href}
+            key={idx}
             className='w-full flex items-center gap-2 p-3 hover:bg-default-100/30'
           >
             <item.icon /> <span>{item.name}</span>

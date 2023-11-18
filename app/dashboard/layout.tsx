@@ -1,13 +1,19 @@
-import Sidebar from '../_components/dashboard/Sidebar'
-import Box from '../_components/shared/Box'
+'use client'
+
+import { useState } from 'react'
+
+import MobileSidebar from '../_components/dashboard/MobileSidebar'
 
 export default function ProfileLayout({ children }: IChildren) {
+  const [isOpen, setIsOpen] = useState(true)
   return (
-    <div className={`lg:grid grid-cols-10`}>
-      <div className='hidden lg:block lg:col-span-2 relative'>
-        <Sidebar />
+    <div className={isOpen ? 'lg:grid grid-cols-10' : ''}>
+      <div className={`${isOpen && 'lg:col-span-2'} relative`}>
+        <MobileSidebar setIsOpen={setIsOpen} />
       </div>
-      <Box className='lg:col-span-8 min-h-screen'>{children}</Box>
+      <div className={`${isOpen && 'lg:col-span-8'} min-h-screen`}>
+        {children}
+      </div>
     </div>
   )
 }

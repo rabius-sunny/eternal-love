@@ -7,7 +7,7 @@ const config: Config = {
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
-    './node_modules/@nextui-org/theme/dist/components/(button | listbox | accordion).js',
+    './node_modules/@nextui-org/theme/dist/components/(button | listbox | accordion).js'
   ],
   theme: {
     colors: {
@@ -24,9 +24,10 @@ const config: Config = {
       red: colors.red,
       neutral: colors.neutral,
       slate: colors.slate,
-    },
+      transparent: colors.transparent
+    }
   },
   plugins: [nextui()],
-  darkMode: 'class',
+  darkMode: 'class'
 }
 export default config
