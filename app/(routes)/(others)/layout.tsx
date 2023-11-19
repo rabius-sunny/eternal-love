@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import { MoveLeft } from 'lucide-react'
 
-import Box from '../_components/shared/Box'
-import ThemeSwitcher from '../_components/shared/ThemeSwitcher'
+import Box from '../../_components/shared/Box'
+import ThemeSwitcher from '../../_components/shared/ThemeSwitcher'
 
 export default function HomeLayout({ children }: IChildren) {
   return (

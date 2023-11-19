@@ -1,9 +1,9 @@
 import React from 'react'
 import { SlackIcon } from 'lucide-react'
 
-import Cta from '../_components/home/Cta'
-import Box from '../_components/shared/Box'
-import SectionHeader from '../_components/shared/SectionHeader'
+import Cta from '../../_components/home/Cta'
+import Box from '../../_components/shared/Box'
+import SectionHeader from '../../_components/shared/SectionHeader'
 
 export default function Home() {
   return (

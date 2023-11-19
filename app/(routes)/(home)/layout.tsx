@@ -1,5 +1,5 @@
-import Header from '../_components/header'
-import Footer from '../_components/home/Footer'
+import Header from '../../_components/header'
+import Footer from '../../_components/home/Footer'
 
 export default function HomeLayout({ children }: IChildren) {
   return (

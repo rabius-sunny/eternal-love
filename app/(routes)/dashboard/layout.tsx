@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 
-import MobileSidebar from '../_components/dashboard/MobileSidebar'
+import MobileSidebar from '../../_components/dashboard/MobileSidebar'
 
 export default function ProfileLayout({ children }: IChildren) {
   const [isOpen, setIsOpen] = useState(true)
