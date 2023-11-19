@@ -1,6 +1,6 @@
-## Tasks Tracker
+# Tasks Tracker
 
-- Home Page
+- ### Home Page
 
   - (x) Header
   - (x) Hero Section
@@ -8,11 +8,23 @@
   - (x) CTA
   - (x) Footer
 
-- About Page
-- Contact us
-- Auth page
+- ### About Page
+
+- ### Contact us
+
+- ### Auth page
 
   - Sign in
   - Sign up
 
-- Dashboard
+- ### Dashboard
+
+  - (x) Sidebar
+  - (x) Mobile Sidebar
+
+- ### Edit Profile
+  - Primary
+  - General Info
+  - Marriage Related
+  - Expectation
+  - Contact

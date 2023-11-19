@@ -49,7 +49,7 @@ export default function MobileSidebar({
           transition={{ type: 'spring', damping: 40, stiffness: 250 }}
         >
           {!isActive ? (
-            <AlignLeft className='h-10 w-10 text-light dark:text-danger' />
+            <AlignLeft className='h-10 w-10 text-light' />
           ) : mediumDevice ? (
             <X className='h-10 w-10 bg-white rounded-full text-danger' />
           ) : (
