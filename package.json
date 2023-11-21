@@ -11,11 +11,15 @@
     "format:check": "prettier --check \"**/*.{ts,tsx,mdx}\" --cache"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.3.2",
     "@nextui-org/accordion": "^2.0.28",
     "@nextui-org/button": "^2.0.26",
+    "@nextui-org/dropdown": "^2.1.16",
+    "@nextui-org/input": "^2.1.16",
     "@nextui-org/listbox": "^2.1.16",
     "@nextui-org/modal": "^2.0.28",
-    "@nextui-org/system": "^2.0.15",
+    "@nextui-org/react": "^2.2.9",
+    "@nextui-org/select": "^2.1.20",
     "@nextui-org/theme": "^2.1.17",
     "@react-aria/ssr": "^3.9.0",
     "framer-motion": "^10.16.5",

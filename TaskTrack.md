@@ -23,7 +23,7 @@
   - (x) Mobile Sidebar
 
 - ### Edit Profile
-  - Primary
+  - Primary \*
   - General Info
   - Marriage Related
   - Expectation

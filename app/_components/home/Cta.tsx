@@ -1,3 +1,13 @@
+'use client'
+
+import { Button as NextButton } from '@nextui-org/button'
+import {
+  Dropdown,
+  DropdownItem,
+  DropdownMenu,
+  DropdownTrigger
+} from '@nextui-org/dropdown'
+
 import Box from '../shared/Box'
 import Button from '../shared/Button'
 
@@ -34,6 +44,25 @@ export default function Cta() {
               title='Learn more'
               className='bg-transparent border-[1px] border-rose-500 dark:text-slate-600'
             />
+            <Dropdown>
+              <DropdownTrigger>
+                <NextButton variant='flat' color='success'>
+                  Open Menu
+                </NextButton>
+              </DropdownTrigger>
+              <DropdownMenu aria-label='Static Actions'>
+                <DropdownItem key='new'>New file</DropdownItem>
+                <DropdownItem key='copy'>Copy link</DropdownItem>
+                <DropdownItem key='edit'>Edit file</DropdownItem>
+                <DropdownItem
+                  key='delete'
+                  className='text-danger'
+                  color='danger'
+                >
+                  Delete file
+                </DropdownItem>
+              </DropdownMenu>
+            </Dropdown>
           </div>
         </div>
       </Box>

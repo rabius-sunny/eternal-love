@@ -1,13 +1,12 @@
-import { nextui } from '@nextui-org/theme'
+import { nextui } from '@nextui-org/react'
 import type { Config } from 'tailwindcss'
 import colors from 'tailwindcss/colors'
 
 const config: Config = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
-    './node_modules/@nextui-org/theme/dist/components/(button | listbox | accordion | modal).js'
+    './config/**/*.{js,ts,jsx,tsx}',
+    './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
     colors: {
