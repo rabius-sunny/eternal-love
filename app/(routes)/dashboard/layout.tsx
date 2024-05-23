@@ -1,10 +1,11 @@
 'use client'
 
 import { useState } from 'react'
+import { TChildren } from '@/app'
 
 import MobileSidebar from '../../_components/dashboard/MobileSidebar'
 
-export default function ProfileLayout({ children }: IChildren) {
+export default function ProfileLayout({ children }: TChildren) {
   const [isOpen, setIsOpen] = useState(true)
   return (
     <div className={isOpen ? 'lg:grid grid-cols-10' : ''}>

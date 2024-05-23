@@ -8,28 +8,30 @@ import { twMerge } from 'tailwind-merge'
 import Provider from '@/config/Provider'
 import { siteInfo } from '@/config/site'
 
+import { TChildren } from '.'
+
 const inter = Nunito({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: {
     default: siteInfo.name,
-    template: `%s - ${siteInfo.name}`,
+    template: `%s - ${siteInfo.name}`
   },
   description: siteInfo.description,
   authors: {
     url: 'https://fb.com/rabibinsalam',
-    name: 'Rabius Sunny',
+    name: 'Rabius Sunny'
   },
   generator:
     'matrimony media spouse niqah nikah marriage husband wife love relation',
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon-16x16.png',
-    apple: '/apple-touch-icon.png',
-  },
+    apple: '/apple-touch-icon.png'
+  }
 }
 
-export default function RootLayout({ children }: IChildren) {
+export default function RootLayout({ children }: TChildren) {
   return (
     <html lang='en'>
       <body

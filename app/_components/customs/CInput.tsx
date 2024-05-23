@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import { IFieldProps } from '@/index'
+import { IFieldProps } from '@/app'
 import { Input } from '@nextui-org/input'
 
 export default function CInput({

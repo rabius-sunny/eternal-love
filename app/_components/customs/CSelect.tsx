@@ -1,5 +1,5 @@
 import React from 'react'
-import { IFieldProps } from '@/index'
+import { IFieldProps } from '@/app'
 import { Select, SelectItem } from '@nextui-org/react'
 
 interface IProps extends IFieldProps {
