@@ -3,7 +3,6 @@
 import React from 'react'
 import { IFieldProps } from '@/index'
 import { Input } from '@nextui-org/input'
-import { FieldError } from 'react-hook-form'
 
 export default function CInput({
   isClearable,
@@ -25,7 +24,7 @@ export default function CInput({
       className='my-6'
       classNames={{
         label:
-          'text-black/50 dark:text-white/90 font-semibold text-sm uppercase',
+          'text-black/50 dark:text-white/90 font-semibold text-sm uppercase z-0',
         input: [
           'bg-transparent',
           'text-black/90 dark:text-white/90',

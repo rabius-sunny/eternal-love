@@ -25,7 +25,7 @@ export default function CSelect({
       className=''
       classNames={{
         label:
-          'text-black/50 dark:text-white/90 font-semibold text-sm uppercase',
+          'text-black/50 dark:text-white/90 font-semibold text-sm uppercase z-0',
         base: [
           'text-black/90 dark:text-white/90',
           'placeholder:text-default-700/50 dark:placeholder:text-white/60'
