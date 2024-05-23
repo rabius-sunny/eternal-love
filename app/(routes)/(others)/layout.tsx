@@ -2,8 +2,8 @@ import Link from 'next/link'
 import { TChildren } from '@/app'
 import { MoveLeft } from 'lucide-react'
 
-import Box from '../../_components/shared/Box'
-import ThemeSwitcher from '../../_components/shared/ThemeSwitcher'
+import Box from '@/components/shared/Box'
+import ThemeSwitcher from '@/components/shared/ThemeSwitcher'
 
 export default function HomeLayout({ children }: TChildren) {
   return (

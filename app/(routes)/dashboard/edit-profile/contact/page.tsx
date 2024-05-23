@@ -1,6 +1,6 @@
 import React from 'react'
 
-import PageHeader from '@/app/_components/dashboard/PageHeader'
+import PageHeader from '@/components/dashboard/PageHeader'
 
 export default function Contact() {
   return (

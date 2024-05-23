@@ -1,7 +1,7 @@
 import { TChildren } from '@/app'
 
-import Header from '../../_components/header'
-import Footer from '../../_components/home/Footer'
+import Header from '@/components/header'
+import Footer from '@/components/home/Footer'
 
 export default function HomeLayout({ children }: TChildren) {
   return (

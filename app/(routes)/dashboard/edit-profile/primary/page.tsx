@@ -5,11 +5,11 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { Button } from '@nextui-org/button'
 import { SubmitHandler, useForm } from 'react-hook-form'
 
-import CInput from '@/app/_components/customs/CInput'
-import CSelect from '@/app/_components/customs/CSelect'
-import PageHeader from '@/app/_components/dashboard/PageHeader'
-import Box from '@/app/_components/shared/Box'
-import { PrimarySchema, TPrimary } from '@/app/_lib/schema'
+import { PrimarySchema, TPrimary } from '@/lib/schema'
+import CInput from '@/components/customs/CInput'
+import CSelect from '@/components/customs/CSelect'
+import PageHeader from '@/components/dashboard/PageHeader'
+import Box from '@/components/shared/Box'
 
 export default function Primary() {
   const {

@@ -4,7 +4,7 @@ import { Dispatch, SetStateAction, useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { AlignLeft, X } from 'lucide-react'
 
-import useMediumDevice from '@/app/_hooks/useMediumDevice'
+import useMediumDevice from '@/hooks/useMediumDevice'
 
 import Sidebar from './Sidebar'
 
